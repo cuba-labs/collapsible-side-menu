@@ -9,6 +9,7 @@
                pos="220px"
                orientation="horizontal"
                height="100%"
+               locked="true"
                settingsEnabled="false"
                stylename="c-sidemenu-layout"
                width="100%">
@@ -56,6 +57,7 @@
                     <main:timeZoneIndicator id="timeZoneIndicator"
                                             width="100%"/>
                     <main:sideMenu id="sideMenu"
+                                   selectOnClick="true"
                                    sidePanel="sideMenuPanel"
                                    sidePanelToggleButton="mobileMenuButton"/>
                     <main:ftsField id="ftsField"
@@ -66,13 +68,7 @@
                            height="100%"
                            width="100%">
                 <main:initialLayout margin="true"
-                                    spacing="true">
-                    <label id="welcomeLabel"
-                           align="MIDDLE_CENTER"
-                           stylename="c-welcome-text"
-                           value="mainMsg://application.welcomeText"
-                           width="100%"/>
-                </main:initialLayout>
+                                    spacing="true"/>
             </main:workArea>
         </split>
     </layout>
